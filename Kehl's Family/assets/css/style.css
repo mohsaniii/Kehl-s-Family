@@ -2237,3 +2237,1009 @@ ul {
         line-height: 36px;
     }
 }
+
+
+/* ============================================================
+   CONTACT PAGE CSS — Design: Figma node 4008:2186
+   ============================================================ */
+
+/* ---- Combined Hero + Contact Info Wrapper ---- */
+.cntTopWrap {
+    position: relative;
+    margin-top: 80px;
+}
+
+.cntHeroBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cntHeroBgImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cntHeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.55);
+}
+
+/* Transparent spacer that pushes contact info below the hero photo */
+.cntHeroSpacer {
+    height: 600px;
+    background-color: transparent;
+}
+
+/* White contact info panel that sits below the hero on the left */
+.cntContactInfoWrap {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 60px 8% 80px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+/* ---- Form Card (right col — overlaps hero from ~460px down) ---- */
+.cntFormCardWrap {
+    position: relative;
+    z-index: 2;
+    padding: 460px 8% 80px 5%;
+}
+
+.cntFormCard {
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    padding: 48px 40px;
+}
+
+.cntFormHeading {
+    font-family: "Century Schoolbook", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #272262;
+    line-height: 1.2;
+}
+
+.cntContactForm {
+    width: 100%;
+}
+
+.cntFormField {
+    margin-bottom: 16px;
+}
+
+.cntInput {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    outline: none;
+    transition: border-color 0.2s;
+    display: block;
+}
+
+.cntInput::placeholder {
+    color: #949599;
+}
+
+.cntInput:focus {
+    border-color: #00ADEF;
+}
+
+.cntTextarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.cntSubmitBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #949599;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 8px;
+}
+
+.cntSubmitBtn:hover {
+    background-color: #272262;
+}
+
+/* ---- Map + Location Section ---- */
+.cntMapSection {
+    background-color: #fff;
+}
+
+.cntMapWrap {
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cntMapIframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.cntLocationInfo {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cntAddress {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 18px;
+    color: #111;
+    font-style: normal;
+    line-height: 1.7;
+    text-decoration: underline;
+}
+
+.cntAddressLine {
+    display: inline;
+}
+
+.cntLocationPhone {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #00ADEF;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.cntLocationPhone:hover {
+    color: #272262;
+    text-decoration: none;
+}
+
+.cntHoursBlock {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 40px;
+}
+
+.cntHoursList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cntHoursRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E6E6E6;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+.cntHoursDay {
+    font-weight: 600;
+}
+
+.cntHoursTime {
+    color: #555;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+    .cntHeroSpacer {
+        height: 400px;
+    }
+
+    .cntHeroBg {
+        height: 400px;
+    }
+
+    .cntFormCardWrap {
+        padding: 40px 5%;
+    }
+
+    .cntContactInfoWrap {
+        padding: 48px 5% 60px;
+    }
+
+    .cntLocationInfo {
+        padding: 60px 5%;
+    }
+}
+
+@media (max-width: 575px) {
+    .cntHeroSpacer {
+        height: 300px;
+    }
+
+    .cntHeroBg {
+        height: 300px;
+    }
+
+    .cntFormCard {
+        padding: 32px 24px;
+    }
+
+    .cntFormCardWrap {
+        padding: 32px 4%;
+    }
+
+    .cntContactInfoWrap {
+        padding: 40px 4% 48px;
+    }
+
+    .cntMapWrap {
+        height: 320px;
+    }
+
+    .cntLocationInfo {
+        padding: 48px 4%;
+    }
+}
+
+
+/* ============================================================
+   ABOUT PAGE CSS — Design: Figma node 4002:138
+   Reuses: svcIntroSection, storDryStackSection, storBulletList
+   ============================================================ */
+
+.abtIntroSection {
+    background-color: #fff;
+    padding: 60px 0 80px;
+    margin-top: 80px;
+}
+
+.abtBreadcrumb {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 0.6);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.abtIntroInner {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.abtIntroSubtitle {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    color: #00ADEF;
+    line-height: 1.3;
+}
+
+.abtIntroPara {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abtFullWidthImg {
+    height: 720px;
+    overflow: hidden;
+}
+
+.abtFullWidthImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .abtIntroSection {
+        padding: 48px 0 60px;
+    }
+
+    .abtFullWidthImg {
+        height: 420px;
+    }
+}
+
+@media (max-width: 575px) {
+    .abtIntroSection {
+        padding: 40px 0 48px;
+    }
+
+    .abtFullWidthImg {
+        height: 260px;
+    }
+
+    .abtIntroSubtitle {
+        font-size: 18px;
+    }
+}
+
+
+/* ============================================================
+   FINANCING PAGE CSS — Design: Figma node 4002:528
+   Reuses: trdHero, trdHeroBgImg, abtBreadcrumb
+   ============================================================ */
+
+/* ---- Intro Section ---- */
+.finIntroSection {
+    background-color: #fff;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.finIntroH1Wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 8% 80px;
+    border-right: 1px solid #F0F0F0;
+}
+
+.finIntroTextWrap {
+    padding: 80px 8% 80px 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+.finIntroSubtitle {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    color: #00ADEF;
+    line-height: 1.3;
+}
+
+/* ---- Why Finance Section ---- */
+.finWhySection {
+    background-color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #F0F0F0;
+}
+
+.finWhyItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.finCheckCircle {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #272262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finCheckCircle i {
+    color: #fff;
+    font-size: 15px;
+}
+
+.finWhyText {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+/* ---- Payment Calculator Section ---- */
+.finCalcSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.finCalcBgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.finCalcOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(39, 34, 98, 0.85);
+    z-index: 1;
+}
+
+.finCalcBody {
+    position: relative;
+    z-index: 2;
+}
+
+.finCalcRow {
+    min-height: 720px;
+    align-items: center;
+}
+
+.finCalcStatWrap {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.finCalcStatText {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.finCalcCardWrap {
+    padding: 60px 8% 60px 4%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.finCalcCard {
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.finCalcField {
+    margin-bottom: 14px;
+}
+
+.finCalcInput {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding: 13px 18px;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    outline: none;
+    display: block;
+    transition: border-color 0.2s;
+    -moz-appearance: textfield;
+}
+
+.finCalcInput::-webkit-outer-spin-button,
+.finCalcInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.finCalcInput::placeholder {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.finCalcInput:focus {
+    border-color: #00ADEF;
+}
+
+.finCalcBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272262;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 36px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finCalcBtn:hover {
+    background-color: #00ADEF;
+}
+
+.finCalcResult {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #272262;
+    min-height: 28px;
+}
+
+@media (max-width: 991px) {
+    .finIntroH1Wrap {
+        padding: 48px 6% 32px;
+        border-right: none;
+        border-bottom: 1px solid #F0F0F0;
+        justify-content: flex-start;
+    }
+
+    .finIntroTextWrap {
+        padding: 40px 6% 60px;
+    }
+
+    .finCalcRow {
+        min-height: auto;
+    }
+
+    .finCalcStatWrap {
+        padding: 60px 6% 32px;
+    }
+
+    .finCalcStatText {
+        font-size: 48px;
+    }
+
+    .finCalcCardWrap {
+        padding: 32px 6% 60px;
+        justify-content: center;
+    }
+
+    .finCalcCard {
+        max-width: 100%;
+    }
+
+    .finWhySection {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .finIntroH1Wrap {
+        padding: 40px 4% 24px;
+    }
+
+    .finIntroTextWrap {
+        padding: 32px 4% 48px;
+    }
+
+    .finIntroSubtitle {
+        font-size: 20px;
+    }
+
+    .finWhySection {
+        padding: 48px 0;
+    }
+
+    .finCalcStatText {
+        font-size: 36px;
+    }
+
+    .finCalcStatWrap {
+        padding: 48px 4% 24px;
+    }
+
+    .finCalcCardWrap {
+        padding: 24px 4% 48px;
+    }
+
+    .finCalcCard {
+        padding: 32px 24px;
+    }
+}
+
+
+/* ============================================================
+   CAREERS PAGE CSS — Design: Figma node 4002:439 / 4002:471
+   Reuses: abtBreadcrumb, kehlNavyBtn
+   ============================================================ */
+
+/* ---- Intro Section ---- */
+.carIntroSection {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+.carIntroTextWrap {
+    padding: 60px 8% 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.carIntroSubtitle {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    color: #00ADEF;
+    line-height: 1.3;
+}
+
+.carIntroImageWrap {
+    height: 100%;
+    min-height: 520px;
+    overflow: hidden;
+}
+
+.carIntroImageWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---- Available Positions Section ---- */
+.carPositionsSection {
+    background-color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #F0F0F0;
+    scroll-margin-top: 96px;
+}
+
+.carJobCard {
+    background-color: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carJobCardTop {
+    flex: 1;
+}
+
+.carJobTitle {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.carJobLocation {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+.carLocIcon {
+    flex-shrink: 0;
+}
+
+.carJobCardBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.carJobDescBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #111;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 24px;
+    border: 1px solid #111;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carJobDescBtn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+/* ---- Modal Overlay ---- */
+.carModalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.carModalOverlay.carModalActive {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ---- Modal Box ---- */
+.carModal {
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    padding: 48px 40px 40px;
+    width: 100%;
+    max-width: 560px;
+    position: relative;
+    max-height: 88vh;
+    overflow-y: auto;
+    transform: translateY(-16px);
+    transition: transform 0.25s ease;
+}
+
+.carModalOverlay.carModalActive .carModal {
+    transform: translateY(0);
+}
+
+.carModalClose {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #111;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 6px;
+    transition: color 0.2s;
+}
+
+.carModalClose:hover {
+    color: #272262;
+}
+
+.carModalTitle {
+    font-family: "Century Schoolbook", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #272262;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.carModalJobInfo {
+    text-align: center;
+}
+
+.carModalJobTitle {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.carModalJobLocWrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+/* ---- Job Description modal body ---- */
+.carDescContent {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+}
+
+.carDescContent ul {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.carDescContent li {
+    margin-bottom: 6px;
+}
+
+.carDescContent strong {
+    font-weight: 700;
+}
+
+/* ---- Application form fields ---- */
+.carAppField {
+    margin-bottom: 14px;
+}
+
+.carAppInput {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 1px;
+    padding: 12px 16px;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    outline: none;
+    display: block;
+    transition: border-color 0.2s;
+}
+
+.carAppInput::placeholder {
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.carAppInput:focus {
+    border-color: #00ADEF;
+}
+
+.carUploadRow {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 4px;
+}
+
+.carUploadBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #111;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    border: 1px solid #111;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+    flex-shrink: 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.carUploadBtn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.carFileInput {
+    display: none;
+}
+
+.carFileLabel {
+    flex: 1;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-left: none;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.6);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.carSubmitBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #949599;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 48px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carSubmitBtn:hover {
+    background-color: #272262;
+}
+
+.carAppSuccess {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.carSuccessMsg {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 18px;
+    color: #272262;
+    line-height: 1.6;
+}
+
+/* Prevent body scroll when modal open */
+.carBodyLocked {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .carIntroTextWrap {
+        padding: 48px 6% 60px;
+    }
+
+    .carPositionsSection {
+        padding: 60px 0;
+    }
+
+    .carJobCardBtns {
+        align-items: stretch;
+    }
+
+    .carJobDescBtn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .carIntroTextWrap {
+        padding: 40px 4% 48px;
+    }
+
+    .carIntroSubtitle {
+        font-size: 20px;
+    }
+
+    .carIntroImageWrap {
+        min-height: 280px;
+    }
+
+    .carPositionsSection {
+        padding: 48px 0;
+    }
+
+    .carModal {
+        padding: 40px 24px 32px;
+        max-height: 92vh;
+    }
+
+    .carModalTitle {
+        font-size: 32px;
+    }
+
+    .carUploadRow {
+        flex-direction: column;
+    }
+
+    .carFileLabel {
+        border-left: 1px solid #D9D9D9;
+        border-top: none;
+    }
+}
