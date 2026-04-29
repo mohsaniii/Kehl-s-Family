@@ -67,7 +67,8 @@ $(document).ready(function () {
     if ($('.kehlPromoCarousel').length) {
         var $promoCarousel = $('.kehlPromoCarousel').owlCarousel({
             loop: true,
-            nav: false,
+            nav: true,
+            navText:['<img src="./assets/images/home/prev-arrow.png" alt="prev-arrow">', '<img src="./assets/images/home/next-arrow.png" alt="next-arrow">'],
             dots: true,
             autoplay: false,
             animateOut: 'fadeOut',

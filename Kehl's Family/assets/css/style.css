@@ -264,7 +264,7 @@ ul {
 }
 
 .kehlNavLink:hover {
-    color: #00ADEF;
+    color: #fff;
 }
 
 .kehlNavContact {
@@ -506,7 +506,7 @@ ul {
    NEW / PRE-OWNED SECTION
    ============================================================ */
 .kehlBoatTypesSection {
-    line-height: 0;
+    margin-top: 64px;
 }
 
 .kehlBoatTypeCard {
@@ -551,13 +551,8 @@ ul {
     background-color: #fff;
 }
 
-.kehlArrivalRow {
-    margin: 0;
-}
-
 .kehlArrivalCard {
-    border-left: 1px solid #D9D9D9;
-    border-right: 1px solid #D9D9D9;
+    padding: 0 12px;
 }
 
 .kehlArrivalImageWrap {
@@ -578,6 +573,8 @@ ul {
 .kehlArrivalInfo {
     border-left: none;
     border-right: none;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
     padding: 20px 20px 16px;
     min-height: 154px;
@@ -625,7 +622,7 @@ ul {
 .kehlArrivalSpecs {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 30px;
     border-top: 1px solid #D9D9D9;
     padding-top: 14px;
     margin-top: 14px;
@@ -633,20 +630,34 @@ ul {
 
 .kehlSpecItem {
     font-family: "Acumin Pro", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #111;
     text-align: center;
-    flex: 1;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    position: relative;
 }
 
-.kehlSpecVDivider {
-    display: block;
-    width: 1px;
-    height: 15px;
-    background-color: #808080;
-    flex-shrink: 0;
+.kehlSpecItem img {
+    width: 20px;
+    height: 20px;
 }
+
+.kehlSpecItem:not(:first-child)::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+}
+
+
 
 /* ============================================================
    SERVICES SECTION
@@ -699,7 +710,7 @@ ul {
    FEATURES SECTION
    ============================================================ */
 .kehlFeaturesSection {
-    padding: 60px 8%;
+    padding: 60px 0;
     background-color: #fff;
 }
 
@@ -707,7 +718,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 0 20px 15px;
 }
 
 .kehlFeatureIconBox {
@@ -722,31 +733,22 @@ ul {
     font-size: 20px;
 }
 
+.kehlFeatureIconBox img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
 .kehlFeatureText h3 {
     margin-bottom: 4px;
 }
 
-.kehlFeatureMidBlock {
-    position: relative;
+.featureBorderRight {
+    border-right: 1px solid #D9D9D9;
 }
 
-.kehlFeatureMidBlock::before,
-.kehlFeatureMidBlock::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 80px;
-    background-color: #D9D9D9;
-}
-
-.kehlFeatureMidBlock::before {
-    left: 0;
-}
-
-.kehlFeatureMidBlock::after {
-    right: 0;
+.videoCardWrapper {
+    padding: 0 20px;
 }
 
 /* ============================================================
@@ -796,34 +798,27 @@ ul {
 }
 
 /* Promo carousel nav arrows */
-.kehlPromoNavPrev,
-.kehlPromoNavNext {
+.kehlPromoCarousel {
+    position: relative;
+}
+
+.kehlPromoCarousel .owl-prev {
     position: absolute;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 50;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #fff;
-    font-size: 24px;
-    transition: color 0.2s;
+    margin: 0;
 }
 
-.kehlPromoNavPrev {
-    left: 16px;
+.kehlPromoCarousel .owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.kehlPromoNavNext {
-    right: 16px;
-}
-
-.kehlPromoNavPrev:hover,
-.kehlPromoNavNext:hover {
-    color: #00ADEF;
+.kehlPromoCarousel .owl-nav [class*=owl-] {
+    margin: 0;
 }
 
 /* Custom owl dots for promo */
@@ -836,11 +831,11 @@ ul {
 }
 
 .kehlPromoSection .owl-dot span {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
+    height: 3px;
+    border-radius: 40%;
     background: rgba(255, 255, 255, 0.4) !important;
     margin: 0 4px;
+    width: 80px !important;
 }
 
 .kehlPromoSection .owl-dot.active span {
@@ -905,11 +900,11 @@ ul {
 
 .kehlVideoTitle {
     font-family: "Tw Cen MT", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: #272262;
+    line-height: 26px;
     text-align: center;
     margin-top: 16px;
-    line-height: 1.4;
 }
 
 /* ============================================================
@@ -917,13 +912,15 @@ ul {
    ============================================================ */
 .kehlAboutSection {
     background-color: #fff;
+    margin-bottom: 120px;
 }
 
 .kehlAboutImageWrap {
     position: relative;
-    padding-top: 72%;
+    padding-top: 69%;
     height: 100%;
-    min-height: 440px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .kehlAboutImageWrap img {
@@ -935,12 +932,15 @@ ul {
     object-fit: cover;
 }
 
-.kehlAboutTextWrap {
-    padding: 80px 8% 80px 6%;
+.kehlAboutOuterWrap{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+.kehlAboutTextWrap {
+    max-width: 560px;
+    margin: 0 auto;
 }
 
 /* ============================================================
@@ -990,7 +990,6 @@ ul {
 .kehlEmailArrow {
     background-color: transparent;
     border: none;
-    border-left: 1px solid #E6E6E6;
     padding: 0 16px;
     cursor: pointer;
     color: #272262;
@@ -1012,7 +1011,8 @@ ul {
 .kehlFooterSocialIcon {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #00ADEF;
+    background-color: #00ADEF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1022,13 +1022,12 @@ ul {
 }
 
 .kehlFooterSocialIcon:hover {
-    background-color: #00ADEF;
-    border-color: #00ADEF;
+    color: #fff;
 }
 
 /* Links (light) column */
 .kehlFooterLinks {
-    padding: 64px 6% 64px 6%;
+        padding: 64px 12% 0 12%;
     height: 100%;
 }
 
@@ -1066,10 +1065,12 @@ ul {
 
 .kehlFooterContact {
     padding-top: 8px;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .kehlFooterLogo {
-    max-width: 160px;
+    max-width: 320px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1090,20 +1091,44 @@ ul {
 .kehlFooterBottom {
     background-color: #FAFAFA;
     border-top: 1px solid #D9D9D9;
-    padding: 12px 6%;
+    padding: 12px 0;
+    margin-top: 64px;
 }
 
 .kehlFooterBottom p {
     font-family: "Tw Cen MT", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(17, 17, 17, 0.6);
     margin: 0;
+}
+
+.kehlFooterBottom a{
+    color: #111;
+    text-align: right;
+    font-family: "Tw Cen MT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.kehlFooterBottom a:hover{
+    color: #111;
 }
 
 /* ============================================================
    RESPONSIVE — TABLET & MOBILE
    ============================================================ */
 @media (max-width: 991px) {
+
+    .kehlPromoSection .owl-dot span {
+        width: 20px !important;
+    }
+
+    .videoCardWrapper {
+        padding: 0 5px;
+    }
+
 
     /* Header */
     .kehlDesktopHeader {
@@ -1150,7 +1175,7 @@ ul {
 
     /* Features */
     .kehlFeaturesSection {
-        padding: 40px 5%;
+        padding: 40px 0;
     }
 
     .kehlFeatureMidBlock::before,
@@ -1159,8 +1184,11 @@ ul {
     }
 
     .kehlFeatureBlock {
-        justify-content: center;
         padding: 16px 0;
+    }
+
+    .featureBorderRight {
+        border-right: 0;
     }
 
     /* Promo */
@@ -1183,11 +1211,17 @@ ul {
     }
 
     .kehlFooterLinks {
-        padding: 48px 6%;
+        padding: 48px 3% 0 3%;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+    .kehlPromoSection .owl-dot span {
+        width: 5px !important;
+    }
+}
+
+@media (max-width: 576px) {
 
     .kehlH1 {
         font-size: 28px;
@@ -1293,6 +1327,7 @@ ul {
     height: 100%;
     min-height: 400px;
 }
+
 .svcIntroImageWrap img {
     position: absolute;
     top: 0;
@@ -1312,6 +1347,7 @@ ul {
     height: 620px;
     overflow: hidden;
 }
+
 .svcWhyImageWrap img {
     width: 100%;
     height: 100%;
@@ -1366,6 +1402,7 @@ ul {
     min-height: 480px;
     overflow: hidden;
 }
+
 .svcSeasonImageWrap img {
     position: absolute;
     top: 0;
@@ -1388,6 +1425,7 @@ ul {
     padding-left: 24px;
     margin: 0;
 }
+
 .svcBulletList li {
     font-family: "Tw Cen MT", sans-serif;
     font-size: 16px;
@@ -1408,6 +1446,7 @@ ul {
     min-height: 480px;
     overflow: hidden;
 }
+
 .svcWarrantyImageWrap img {
     position: absolute;
     top: 0;
@@ -1448,6 +1487,7 @@ ul {
     height: 520px;
     overflow: hidden;
 }
+
 .svcStorageImageWrap img {
     width: 100%;
     height: 100%;
@@ -1472,6 +1512,7 @@ ul {
     transition: all 0.3s;
     align-self: flex-start;
 }
+
 .svcStorageBtn:hover {
     background-color: #fff;
     color: #272262;
@@ -1512,9 +1553,11 @@ ul {
     appearance: none;
     -webkit-appearance: none;
 }
+
 .svcInput::placeholder {
     color: rgba(34, 34, 34, 0.6);
 }
+
 .svcInput:focus {
     border-color: #272262;
 }
@@ -1532,6 +1575,7 @@ ul {
 .svcDateInput {
     color: rgba(34, 34, 34, 0.6);
 }
+
 .svcDateInput:not(:placeholder-shown),
 .svcDateInput:valid {
     color: #111;
@@ -1632,6 +1676,7 @@ ul {
         padding: 60px 0 80px;
     }
 }
+
 /* ============================================================
    STORAGE PAGE CSS
    Design: Figma node 2003:820
