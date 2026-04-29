@@ -412,8 +412,7 @@ ul {
 }
 
 .kehlMobileLogo img {
-    height: 36px;
-    width: auto;
+    max-width: 220px;
     object-fit: contain;
 }
 
@@ -1427,7 +1426,7 @@ ul {
 }
 
 .svcSeasonTextWrap > div {
-    max-width: 560px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -1456,7 +1455,7 @@ ul {
     position: relative;
     padding-top: 69%;
     height: 100%;
-    max-width: 720px;
+    max-width: 480px;
     margin: 0 auto;
 }
 
@@ -1494,9 +1493,9 @@ ul {
 }
 
 .svcStorageContent {
-    padding: 0 10%;
-    display: flex;
-    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .svcStorageImageWrap {
@@ -1584,32 +1583,38 @@ ul {
     resize: vertical;
 }
 
-/* Date input wrapper */
-.svcDateField {
-    position: relative;
-}
-
+/* Date input styling */
 .svcDateInput {
     color: rgba(34, 34, 34, 0.6);
 }
 
+.svcDateInput:focus,
 .svcDateInput:not(:placeholder-shown),
 .svcDateInput:valid {
     color: #111;
 }
 
-/* Calendar icon (FA) on date field */
-.svcDateField::after {
-    content: "\f073";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
+/* Show placeholder for date input when empty */
+.svcDateInput[type="text"]::placeholder {
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.svcDateInput[type="date"]::-webkit-datetime-edit-text,
+.svcDateInput[type="date"]::-webkit-datetime-edit-month-field,
+.svcDateInput[type="date"]::-webkit-datetime-edit-day-field,
+.svcDateInput[type="date"]::-webkit-datetime-edit-year-field {
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.svcDateInput[type="date"]:focus::-webkit-datetime-edit-text,
+.svcDateInput[type="date"]:focus::-webkit-datetime-edit-month-field,
+.svcDateInput[type="date"]:focus::-webkit-datetime-edit-day-field,
+.svcDateInput[type="date"]:focus::-webkit-datetime-edit-year-field,
+.svcDateInput[type="date"]:valid::-webkit-datetime-edit-text,
+.svcDateInput[type="date"]:valid::-webkit-datetime-edit-month-field,
+.svcDateInput[type="date"]:valid::-webkit-datetime-edit-day-field,
+.svcDateInput[type="date"]:valid::-webkit-datetime-edit-year-field {
     color: #111;
-    pointer-events: none;
-    font-size: 14px;
 }
 
 /* ============================================================
@@ -1735,12 +1740,10 @@ ul {
 }
 
 .storHeroBg {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: 600px;
-    z-index: 0;
+    z-index: 3;
     overflow: hidden;
 }
 
@@ -1760,9 +1763,12 @@ ul {
 }
 
 .storHeroTextWrap {
-    position: relative;
+    position: absolute;
+    left: 7.5%;
+    bottom: 64px;
     z-index: 2;
-    padding: 260px 8% 60px;
+    padding: 0 15px;
+    max-width: 720px;
 }
 
 .storHeroSubtitle {
@@ -1777,7 +1783,8 @@ ul {
     position: relative;
     z-index: 2;
     background-color: #fff;
-    padding: 60px 8% 80px;
+    padding-top: 64px;
+    max-width: 700px;
 }
 
 /* --- Framed Image (right column, spans hero + intro) --- */
@@ -1785,10 +1792,11 @@ ul {
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center;
-    padding: 60px 8% 60px 4%;
+    max-width: 700px;
+    margin: -26% auto 0 auto;
 }
 
 .storFramedImageWrap {
@@ -1805,25 +1813,25 @@ ul {
 /* --- Outdoor Dry Stack Storage Section --- */
 .storDryStackSection {
     background-color: #fff;
-    border-top: 1px solid #F0F0F0;
 }
 
 .storDryStackImgWrap {
     position: relative;
-    height: 500px;
-    overflow: hidden;
+    padding-top: 59%;
 }
 
 .storDryStackImgWrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .storDryStackContent {
-    padding: 80px 8%;
-    display: flex;
-    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* --- Price / Pricing Text (shared across storage sections) --- */
@@ -1840,13 +1848,12 @@ ul {
 /* --- Slip Rentals Section --- */
 .storSlipSection {
     background-color: #fff;
-    border-top: 1px solid #F0F0F0;
+    margin-top: 120px;
 }
 
 .storSlipContent {
-    padding: 80px 8%;
-    display: flex;
-    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
 }
 
 .storBulletList {
@@ -1865,11 +1872,15 @@ ul {
 
 .storSlipImgWrap {
     position: relative;
-    height: 600px;
-    overflow: hidden;
+    max-width: 520px;
+    padding-top: 82%;
+    margin: 0 auto;
 }
 
 .storSlipImgWrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1884,30 +1895,13 @@ ul {
         margin-top: 60px;
     }
 
-    .storHeroBg {
-        height: 380px;
-    }
-
-    .storHeroTextWrap {
-        padding: 120px 6% 48px;
-    }
-
     .storHeroSubtitle {
         font-size: 20px;
     }
 
-    .storIntroTextWrap {
-        padding: 48px 6% 60px;
-    }
-
     .storFramedImageCol {
         height: auto;
-        padding: 40px 6%;
         align-items: flex-start;
-    }
-
-    .storDryStackImgWrap {
-        height: 320px;
     }
 
     .storDryStackContent {
@@ -1924,41 +1918,8 @@ ul {
 }
 
 @media (max-width: 575px) {
-
-    .storHeroBg {
-        height: 300px;
-    }
-
-    .storHeroTextWrap {
-        padding: 80px 5% 40px;
-    }
-
     .storHeroSubtitle {
         font-size: 18px;
-    }
-
-    .storIntroTextWrap {
-        padding: 40px 5% 48px;
-    }
-
-    .storFramedImageCol {
-        padding: 32px 5%;
-    }
-
-    .storDryStackImgWrap {
-        height: 260px;
-    }
-
-    .storDryStackContent {
-        padding: 40px 5%;
-    }
-
-    .storSlipContent {
-        padding: 40px 5%;
-    }
-
-    .storSlipImgWrap {
-        height: 280px;
     }
 }
 

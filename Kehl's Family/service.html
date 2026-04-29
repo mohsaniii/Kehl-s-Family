@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
                             <div class="svcIntroImageWrap">
                                 <img src="./assets/images/service/Rectangle 340.png" alt="Kehl's Service">
                             </div>
@@ -205,7 +205,7 @@
                                 <img src="./assets/images/service/Rectangle 345.png" alt="Winter Boat Services">
                             </div>
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
                             <div class="svcSeasonTextWrap">
                                 <div>
                                     <h2 class="kehlH2 kehlNavyText">Winter Boat Services</h2>
@@ -235,7 +235,7 @@
             <div class="row">
                 <div class="col-xl-10 col-lg-11 mx-auto">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
                             <div class="svcSeasonTextWrap">
                                 <div>
                                     <h2 class="kehlH2 kehlNavyText">Spring Boat Services</h2>
@@ -268,14 +268,14 @@
     <section class="svcWarrantySection">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-10 col-lg-11 mx-auto">
+                <div class="col-xl-9 col-lg-10 mx-auto">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-2 order-lg-1">
                             <div class="svcWarrantyImageWrap">
                                 <img src="./assets/images/service/Rectangle 346.png" alt="Warranty Service">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
                             <div class="svcWarrantyTextWrap">
                                 <div>
                                     <h2 class="kehlH2 kehlNavyText">Warranty Service</h2>
@@ -292,20 +292,24 @@
 
     <!-- ==================== WINTER STORAGE ==================== -->
     <section class="svcStorageSection">
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
-                <div class="col-lg-6">
-                    <div class="svcStorageNavyCol">
-                        <div class="svcStorageContent">
-                            <h2 class="kehlH2 text-white">Boat Winter Storage Available</h2>
-                            <p class="kehlPara text-white mt-4">Kehl's Family Boating Center provides winter storage for boats! We have a secure facility, and winterization and transportation for your boat are available. Call us today to get all the details.</p>
-                            <a href="javascript:void(0)" class="svcStorageBtn mt-5 d-inline-flex">Storage Details</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="svcStorageNavyCol">
+                                <div class="svcStorageContent">
+                                    <h2 class="kehlH2 text-white">Boat Winter Storage Available</h2>
+                                    <p class="kehlPara text-white mt-4">Kehl's Family Boating Center provides winter storage for boats! We have a secure facility, and winterization and transportation for your boat are available. Call us today to get all the details.</p>
+                                    <a href="javascript:void(0)" class="svcStorageBtn mt-5 d-inline-flex">Storage Details</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="svcStorageImageWrap">
-                        <img src="./assets/images/service/Rectangle 347.png" alt="Boat Storage">
+                        <div class="col-lg-6">
+                            <div class="svcStorageImageWrap">
+                                <img src="./assets/images/service/Rectangle 347.png" alt="Boat Storage">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -334,9 +338,8 @@
                         <div class="svcFormField">
                             <input type="text" placeholder="Boat Year Make Model*" class="svcInput">
                         </div>
-                        <div class="svcFormField svcDateField">
-                            <input type="date" placeholder="Preferred Service Date" class="svcInput svcDateInput" id="serviceDate">
-                            <label for="serviceDate" class="svcDateLabel">Preferred Service Date</label>
+                        <div class="svcFormField">
+                            <input type="date" class="svcInput svcDateInput" id="serviceDate" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Preferred Service Date">
                         </div>
                         <div class="svcFormField">
                             <textarea placeholder="Describe Service Needs" class="svcInput svcTextarea" rows="4"></textarea>
