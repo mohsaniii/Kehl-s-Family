@@ -1,0 +1,2149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* common css starts here */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul,
+dl,
+fieldset,
+pre {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Tw Cen MT";
+    src: url("../fonts/tw-cen-mt/Tw-Cen-MT.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Century Schoolbook";
+    src: url("../fonts/century-schoolbook/SCHLBKB.TTF") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/acumin-pro/Acumin-RPro.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/acumin-pro/Acumin-ItPro.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/acumin-pro/Acumin-BdPro.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/acumin-pro/Acumin-BdItPro.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ============================================================
+   KEHL'S FAMILY BOATING CENTER — HOME PAGE CSS
+   Design: Figma node 4002:961
+   Colors: Navy #272262 | Aqua #00ADEF | Black #111
+   Fonts: Century Schoolbook (headings) | Tw Cen MT (body/btns) | Acumin Pro (specs)
+   ============================================================ */
+
+/* --- Reset helpers --- */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- Typography tokens --- */
+.kehlH1 {
+    font-family: "Century Schoolbook", serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.kehlH2 {
+    font-family: "Century Schoolbook", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.kehlH3 {
+    font-family: "Century Schoolbook", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.kehlPara {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.kehlNavyText {
+    color: #272262;
+}
+
+.kehlBlackText {
+    color: #111;
+}
+
+.kehlAquaText {
+    color: #00ADEF;
+}
+
+/* --- Button styles --- */
+.kehlAquaBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ADEF;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kehlAquaBtn:hover {
+    background-color: #008ec0;
+    color: #fff;
+}
+
+.kehlNavyBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272262;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kehlNavyBtn:hover {
+    background-color: #1a1748;
+    color: #fff;
+}
+
+.kehlWhiteFilledBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #111;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.kehlWhiteFilledBtn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* ============================================================
+   DESKTOP HEADER
+   ============================================================ */
+.kehlDesktopHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.kehlDesktopNav {
+    background-color: #272262;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.kehlNavBrand {
+    flex-shrink: 0;
+}
+
+.kehlNavBrand img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.kehlNavLinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.kehlNavLink {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.kehlNavLink:hover {
+    color: #00ADEF;
+}
+
+.kehlNavContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.kehlCallText {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 14px;
+    color: #00ADEF;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.kehlNavPhone {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1;
+}
+
+.kehlNavPhone:hover {
+    color: #00ADEF;
+}
+
+/* --- Desktop Side Menu --- */
+.kehlSideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 300;
+    padding: 40px 40px 40px 10%;
+    overflow-y: auto;
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.15);
+    transform: translateX(-110%);
+    transition: transform 0.4s ease;
+}
+
+.kehlSideMenu.kehlSideMenuOpen {
+    transform: translateX(0);
+}
+
+.kehlSideMenuClose {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.kehlSideMenuClose img {
+    width: 18px;
+}
+
+.kehlSideMenuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kehlSideMenuList li {
+    margin-bottom: 28px;
+}
+
+.kehlSideMenuLink {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.kehlSideMenuLink:hover {
+    color: #272262;
+}
+
+.kehlSideMenuSocial {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.kehlSocialIcon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #272262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #272262;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.kehlSocialIcon:hover {
+    background-color: #272262;
+    color: #fff;
+}
+
+/* ============================================================
+   MOBILE HEADER
+   ============================================================ */
+.kehlMobileHeader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: #272262;
+    padding: 10px 24px;
+}
+
+.kehlMobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kehlMobileHamburger {
+    width: 36px;
+    cursor: pointer;
+}
+
+.kehlMobileHamburger .line {
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin: 8px 0;
+    transition: all 0.3s;
+}
+
+.kehlMobileHamburger .top,
+.kehlMobileHamburger .bottom {
+    width: 100%;
+}
+
+.kehlMobileHamburger .middle {
+    width: 60%;
+}
+
+.kehlMobileLogo img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+}
+
+.kehlMobilePhoneIcon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.kehlMobilePhoneIcon:hover {
+    color: #00ADEF;
+}
+
+/* Mobile Side Menu */
+.kehlMobileSideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 300;
+    padding: 36px 32px;
+    overflow-y: auto;
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.15);
+    transform: translateX(-110%);
+    transition: transform 0.4s ease;
+}
+
+.kehlMobileSideMenu.kehlMobileSideMenuOpen {
+    transform: translateX(0);
+}
+
+.kehlMobileSideMenuClose {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.kehlMobileSideMenuClose img {
+    width: 16px;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.kehlHeroWrapper {
+    padding-top: 80px;
+    /* offset for fixed header */
+}
+
+.kehlHeroSection {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.kehlHeroVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlHeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.4);
+}
+
+.kehlHeroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+}
+
+/* ============================================================
+   NEW / PRE-OWNED SECTION
+   ============================================================ */
+.kehlBoatTypesSection {
+    line-height: 0;
+}
+
+.kehlBoatTypeCard {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+
+.kehlBoatTypeImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlBoatTypeGradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 40%, rgba(17, 17, 17, 0.8) 100%);
+}
+
+.kehlBoatTypeContent {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    padding: 0 24px;
+}
+
+/* ============================================================
+   NEW ARRIVALS SECTION
+   ============================================================ */
+.kehlArrivalsSection {
+    padding: 80px 0 100px;
+    background-color: #fff;
+}
+
+.kehlArrivalRow {
+    margin: 0;
+}
+
+.kehlArrivalCard {
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+}
+
+.kehlArrivalImageWrap {
+    position: relative;
+    padding-top: 63%;
+    overflow: hidden;
+}
+
+.kehlArrivalImageWrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlArrivalInfo {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 20px 20px 16px;
+    min-height: 154px;
+}
+
+.kehlArrivalTitle {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.kehlArrivalPrice {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #272262;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.kehlArrivalMonthly {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 8px;
+}
+
+.kehlViewDetails {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #272262;
+    line-height: 25px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.kehlViewDetails:hover {
+    color: #00ADEF;
+}
+
+.kehlArrivalSpecs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 14px;
+    margin-top: 14px;
+}
+
+.kehlSpecItem {
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #111;
+    text-align: center;
+    flex: 1;
+}
+
+.kehlSpecVDivider {
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #808080;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   SERVICES SECTION
+   ============================================================ */
+.kehlServicesSection {
+    line-height: 0;
+}
+
+.kehlServiceCard {
+    position: relative;
+    height: 720px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kehlServiceImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.kehlServiceCard:hover .kehlServiceImage {
+    transform: scale(1.04);
+}
+
+.kehlServiceGradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.7) 100%);
+}
+
+.kehlServiceContent {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    padding: 0 16px;
+}
+
+/* ============================================================
+   FEATURES SECTION
+   ============================================================ */
+.kehlFeaturesSection {
+    padding: 60px 8%;
+    background-color: #fff;
+}
+
+.kehlFeatureBlock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.kehlFeatureIconBox {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #272262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.kehlFeatureText h3 {
+    margin-bottom: 4px;
+}
+
+.kehlFeatureMidBlock {
+    position: relative;
+}
+
+.kehlFeatureMidBlock::before,
+.kehlFeatureMidBlock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80px;
+    background-color: #D9D9D9;
+}
+
+.kehlFeatureMidBlock::before {
+    left: 0;
+}
+
+.kehlFeatureMidBlock::after {
+    right: 0;
+}
+
+/* ============================================================
+   PROMOTION CAROUSEL SECTION
+   ============================================================ */
+.kehlPromoSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.kehlPromoSlide {
+    position: relative;
+    height: 720px;
+    overflow: hidden;
+}
+
+.kehlPromoImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlPromoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.55);
+}
+
+.kehlPromoContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 80%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Promo carousel nav arrows */
+.kehlPromoNavPrev,
+.kehlPromoNavNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.2s;
+}
+
+.kehlPromoNavPrev {
+    left: 16px;
+}
+
+.kehlPromoNavNext {
+    right: 16px;
+}
+
+.kehlPromoNavPrev:hover,
+.kehlPromoNavNext:hover {
+    color: #00ADEF;
+}
+
+/* Custom owl dots for promo */
+.kehlPromoSection .owl-dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.kehlPromoSection .owl-dot span {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.4) !important;
+    margin: 0 4px;
+}
+
+.kehlPromoSection .owl-dot.active span {
+    background: #fff !important;
+}
+
+/* ============================================================
+   VIDEOS SECTION
+   ============================================================ */
+.kehlVideosSection {
+    padding: 80px 0 100px;
+    background-color: #fff;
+}
+
+.kehlVideoLink {
+    display: block;
+}
+
+.kehlVideoThumb {
+    position: relative;
+    padding-top: 66%;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.kehlVideoThumb img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlVideoPlayOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: background-color 0.3s;
+}
+
+.kehlVideoLink:hover .kehlVideoPlayOverlay {
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+.kehlPlayIcon {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 64px !important;
+    height: 64px !important;
+    padding-top: 0 !important;
+    object-fit: contain !important;
+}
+
+.kehlVideoTitle {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 18px;
+    color: #272262;
+    text-align: center;
+    margin-top: 16px;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   ABOUT SECTION
+   ============================================================ */
+.kehlAboutSection {
+    background-color: #fff;
+}
+
+.kehlAboutImageWrap {
+    position: relative;
+    padding-top: 72%;
+    height: 100%;
+    min-height: 440px;
+}
+
+.kehlAboutImageWrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kehlAboutTextWrap {
+    padding: 80px 8% 80px 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.kehlFooter {
+    background-color: #FAFAFA;
+}
+
+/* Newsletter (navy) column */
+.kehlFooterNewsletter {
+    background-color: #272262;
+    height: 100%;
+    padding: 80px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.kehlFooterNewsletterInner {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.kehlNewsletterForm {
+    width: 100%;
+}
+
+.kehlEmailWrap {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+}
+
+.kehlEmailInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    background: transparent;
+}
+
+.kehlEmailArrow {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #E6E6E6;
+    padding: 0 16px;
+    cursor: pointer;
+    color: #272262;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.kehlEmailArrow:hover {
+    background-color: #272262;
+    color: #fff;
+}
+
+.kehlFooterSocial {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.kehlFooterSocialIcon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.kehlFooterSocialIcon:hover {
+    background-color: #00ADEF;
+    border-color: #00ADEF;
+}
+
+/* Links (light) column */
+.kehlFooterLinks {
+    padding: 64px 6% 64px 6%;
+    height: 100%;
+}
+
+.kehlFooterColHead {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #272262;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.kehlFooterLinkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kehlFooterLinkList li {
+    margin-bottom: 12px;
+}
+
+.kehlFooterLink {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+    transition: color 0.2s;
+}
+
+.kehlFooterLink:hover {
+    color: #272262;
+}
+
+.kehlFooterContact {
+    padding-top: 8px;
+}
+
+.kehlFooterLogo {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.kehlFooterPhone {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    color: #272262;
+    text-align: center;
+}
+
+.kehlFooterPhone:hover {
+    color: #00ADEF;
+}
+
+/* Footer bottom bar */
+.kehlFooterBottom {
+    background-color: #FAFAFA;
+    border-top: 1px solid #D9D9D9;
+    padding: 12px 6%;
+}
+
+.kehlFooterBottom p {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.6);
+    margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET & MOBILE
+   ============================================================ */
+@media (max-width: 991px) {
+
+    /* Header */
+    .kehlDesktopHeader {
+        display: none;
+    }
+
+    .kehlMobileHeader {
+        display: block;
+    }
+
+    .kehlHeroWrapper {
+        padding-top: 60px;
+    }
+
+    /* Hero */
+    .kehlHeroSection {
+        height: 500px;
+    }
+
+    .kehlH1 {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 3px;
+    }
+
+    .kehlH2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    /* Boat types */
+    .kehlBoatTypeCard {
+        height: 360px;
+    }
+
+    /* Services */
+    .kehlServiceCard {
+        height: 280px;
+    }
+
+    .kehlServicesSection .col-6 .kehlServiceCard {
+        height: 220px;
+    }
+
+    /* Features */
+    .kehlFeaturesSection {
+        padding: 40px 5%;
+    }
+
+    .kehlFeatureMidBlock::before,
+    .kehlFeatureMidBlock::after {
+        display: none;
+    }
+
+    .kehlFeatureBlock {
+        justify-content: center;
+        padding: 16px 0;
+    }
+
+    /* Promo */
+    .kehlPromoSlide {
+        height: 480px;
+    }
+
+    .kehlPromoContent {
+        width: 90%;
+    }
+
+    /* About */
+    .kehlAboutTextWrap {
+        padding: 40px 6%;
+    }
+
+    /* Footer */
+    .kehlFooterNewsletter {
+        padding: 60px 24px;
+    }
+
+    .kehlFooterLinks {
+        padding: 48px 6%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .kehlH1 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 2px;
+    }
+
+    .kehlH2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .kehlH3 {
+        font-size: 18px;
+    }
+
+    .kehlHeroSection {
+        height: 420px;
+    }
+
+    .kehlBoatTypeCard {
+        height: 280px;
+    }
+
+    .kehlPromoSlide {
+        height: 380px;
+    }
+
+    .kehlServicesSection .col-6 .kehlServiceCard {
+        height: 180px;
+    }
+
+    .kehlServicesSection .kehlH2 {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   SERVICE PAGE CSS
+   ============================================================ */
+
+/* Active nav link */
+.kehlNavLinkActive {
+    color: #00ADEF !important;
+}
+
+/* --- Hero Banner --- */
+.svcHero {
+    position: relative;
+    height: 600px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.svcHeroBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svcHeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+.svcHeroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Intro Section --- */
+.svcIntroSection {
+    background-color: #fff;
+}
+
+.svcIntroTextWrap {
+    padding: 80px 8% 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.svcIntroImageWrap {
+    position: relative;
+    padding-top: 66%;
+    height: 100%;
+    min-height: 400px;
+}
+.svcIntroImageWrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Why Choose Section --- */
+.svcWhyChooseSection {
+    background-color: #fff;
+}
+
+.svcWhyImageWrap {
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+}
+.svcWhyImageWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svcWhyContentWrap {
+    background-color: #272262;
+    height: 620px;
+    padding: 60px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.svcWhyGrid {
+    display: flex;
+    gap: 40px;
+}
+
+.svcWhyCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.svcWhyItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.svcCheckIcon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+/* --- Seasonal Sections (Winter / Spring) --- */
+.svcSeasonSection {
+    background-color: #fff;
+    border-top: 1px solid #F0F0F0;
+}
+
+.svcSeasonImageWrap {
+    position: relative;
+    height: 100%;
+    min-height: 480px;
+    overflow: hidden;
+}
+.svcSeasonImageWrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svcSeasonTextWrap {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.svcBulletList {
+    list-style: disc;
+    padding-left: 24px;
+    margin: 0;
+}
+.svcBulletList li {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+/* --- Warranty Section --- */
+.svcWarrantySection {
+    background-color: #fff;
+    border-top: 1px solid #F0F0F0;
+}
+
+.svcWarrantyImageWrap {
+    position: relative;
+    height: 100%;
+    min-height: 480px;
+    overflow: hidden;
+}
+.svcWarrantyImageWrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svcWarrantyTextWrap {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* --- Storage Section --- */
+.svcStorageSection {
+    background-color: #fff;
+}
+
+.svcStorageNavyCol {
+    background-color: #272262;
+    height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.svcStorageContent {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.svcStorageImageWrap {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+.svcStorageImageWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svcStorageBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+.svcStorageBtn:hover {
+    background-color: #fff;
+    color: #272262;
+}
+
+/* --- Request Service Form --- */
+.svcFormSection {
+    background-color: #fff;
+    padding: 80px 0 100px;
+}
+
+.svcFormTopDivider {
+    height: 1px;
+    background-color: #D9D9D9;
+    margin-bottom: 80px;
+}
+
+.svcForm {
+    width: 100%;
+}
+
+.svcFormField {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.svcInput {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    padding: 12px 16px;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.svcInput::placeholder {
+    color: rgba(34, 34, 34, 0.6);
+}
+.svcInput:focus {
+    border-color: #272262;
+}
+
+.svcTextarea {
+    height: 96px !important;
+    resize: vertical;
+}
+
+/* Date input wrapper */
+.svcDateField {
+    position: relative;
+}
+
+.svcDateInput {
+    color: rgba(34, 34, 34, 0.6);
+}
+.svcDateInput:not(:placeholder-shown),
+.svcDateInput:valid {
+    color: #111;
+}
+
+/* Calendar icon (FA) on date field */
+.svcDateField::after {
+    content: "\f073";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+/* ============================================================
+   SERVICE PAGE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 991px) {
+
+    .svcHero {
+        height: 420px;
+        margin-top: 60px;
+    }
+
+    .svcIntroTextWrap {
+        padding: 48px 6%;
+        order: 2;
+    }
+
+    .svcWhyImageWrap {
+        height: 320px;
+    }
+
+    .svcWhyContentWrap {
+        height: auto;
+        padding: 48px 6%;
+    }
+
+    .svcWhyGrid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .svcSeasonImageWrap {
+        min-height: 300px;
+    }
+
+    .svcSeasonTextWrap {
+        padding: 48px 6%;
+    }
+
+    .svcWarrantyImageWrap {
+        min-height: 300px;
+    }
+
+    .svcWarrantyTextWrap {
+        padding: 48px 6%;
+    }
+
+    .svcStorageNavyCol {
+        height: auto;
+        padding: 60px 6%;
+    }
+
+    .svcStorageContent {
+        padding: 0;
+    }
+
+    .svcStorageImageWrap {
+        height: 320px;
+    }
+
+    .svcFormTopDivider {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .svcHero {
+        height: 320px;
+    }
+
+    .svcWhyContentWrap {
+        padding: 40px 5%;
+    }
+
+    .svcStorageNavyCol {
+        padding: 48px 5%;
+    }
+
+    .svcFormSection {
+        padding: 60px 0 80px;
+    }
+}
+/* ============================================================
+   STORAGE PAGE CSS
+   Design: Figma node 2003:820
+   Colors: Navy #272262 | Aqua #00ADEF | Black #111
+   ============================================================ */
+
+/* --- Hero + Intro Combined Wrapper --- */
+.storHeroIntroWrap {
+    position: relative;
+    margin-top: 80px;
+}
+
+.storHeroBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.storHeroBgImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.storHeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.55);
+}
+
+.storHeroTextWrap {
+    position: relative;
+    z-index: 2;
+    padding: 260px 8% 60px;
+}
+
+.storHeroSubtitle {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.storIntroTextWrap {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 60px 8% 80px;
+}
+
+/* --- Framed Image (right column, spans hero + intro) --- */
+.storFramedImageCol {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 60px 8% 60px 4%;
+}
+
+.storFramedImageWrap {
+    width: 100%;
+}
+
+.storFramedImageWrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 10px solid #fff;
+}
+
+/* --- Outdoor Dry Stack Storage Section --- */
+.storDryStackSection {
+    background-color: #fff;
+    border-top: 1px solid #F0F0F0;
+}
+
+.storDryStackImgWrap {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.storDryStackImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.storDryStackContent {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Price / Pricing Text (shared across storage sections) --- */
+.storPriceText {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #00ADEF;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* --- Slip Rentals Section --- */
+.storSlipSection {
+    background-color: #fff;
+    border-top: 1px solid #F0F0F0;
+}
+
+.storSlipContent {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.storBulletList {
+    list-style: disc;
+    padding-left: 24px;
+    margin: 0;
+}
+
+.storBulletList li {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.storSlipImgWrap {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.storSlipImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================================
+   STORAGE PAGE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 991px) {
+
+    .storHeroIntroWrap {
+        margin-top: 60px;
+    }
+
+    .storHeroBg {
+        height: 380px;
+    }
+
+    .storHeroTextWrap {
+        padding: 120px 6% 48px;
+    }
+
+    .storHeroSubtitle {
+        font-size: 20px;
+    }
+
+    .storIntroTextWrap {
+        padding: 48px 6% 60px;
+    }
+
+    .storFramedImageCol {
+        height: auto;
+        padding: 40px 6%;
+        align-items: flex-start;
+    }
+
+    .storDryStackImgWrap {
+        height: 320px;
+    }
+
+    .storDryStackContent {
+        padding: 48px 6%;
+    }
+
+    .storSlipContent {
+        padding: 48px 6%;
+    }
+
+    .storSlipImgWrap {
+        height: 360px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .storHeroBg {
+        height: 300px;
+    }
+
+    .storHeroTextWrap {
+        padding: 80px 5% 40px;
+    }
+
+    .storHeroSubtitle {
+        font-size: 18px;
+    }
+
+    .storIntroTextWrap {
+        padding: 40px 5% 48px;
+    }
+
+    .storFramedImageCol {
+        padding: 32px 5%;
+    }
+
+    .storDryStackImgWrap {
+        height: 260px;
+    }
+
+    .storDryStackContent {
+        padding: 40px 5%;
+    }
+
+    .storSlipContent {
+        padding: 40px 5%;
+    }
+
+    .storSlipImgWrap {
+        height: 280px;
+    }
+}
+
+/* ============================================================
+   SELL/TRADE PAGE CSS
+   Design: Figma node 4010:2214
+   Colors: Navy #272262 | Aqua #00ADEF | Black #111 | Light Gray #FAFAFA
+   ============================================================ */
+
+/* --- Hero Section --- */
+.trdHero {
+    margin-top: 80px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.trdHeroBgImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+/* --- Intro Section (H1 left / text+btn right) --- */
+.trdIntroSection {
+    background-color: #fff;
+}
+
+.trdIntroH1Wrap {
+    padding: 60px 8%;
+}
+
+.trdIntroTextWrap {
+    padding: 60px 8% 60px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --- Why Choose / Features Section --- */
+.trdFeaturesSection {
+    background-color: #FAFAFA;
+    padding: 80px 6%;
+}
+
+.trdFeatureCol {
+    padding-right: 40px;
+}
+
+.trdFeatureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.trdFeatureIconBox {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #272262;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trdFeatureSvg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.trdFeatureText {
+    flex: 1;
+    min-width: 0;
+}
+
+/* --- Promo / Full-Width Image Section --- */
+.trdPromoSection {
+    height: 520px;
+    overflow: hidden;
+}
+
+.trdPromoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+    display: block;
+}
+
+/* --- Our Process Section (navy bg) --- */
+.trdProcessSection {
+    background-color: #272262;
+    padding: 80px 10%;
+}
+
+.trdProcessTitle {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.trdProcessGrid {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.trdProcessCard {
+    flex: 1 0 0%;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 40px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trdProcessBadge {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #272262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+/* --- Process Section CTA (below cards) --- */
+.trdProcessCta {
+    text-align: center;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trdProcessCtaText {
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+    margin: 0;
+}
+
+.trdWhiteOutlineBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 13px 32px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.trdWhiteOutlineBtn:hover {
+    background-color: #fff;
+    color: #272262;
+}
+
+/* ============================================================
+   SELL/TRADE PAGE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 991px) {
+
+    .trdHero {
+        height: 420px;
+        margin-top: 60px;
+    }
+
+    .trdIntroH1Wrap {
+        padding: 48px 6%;
+    }
+
+    .trdIntroTextWrap {
+        padding: 0 6% 48px;
+    }
+
+    .trdFeaturesSection {
+        padding: 60px 5%;
+    }
+
+    .trdFeatureCol {
+        padding-right: 24px;
+    }
+
+    .trdPromoSection {
+        height: 360px;
+    }
+
+    .trdProcessSection {
+        padding: 60px 5%;
+    }
+
+    .trdProcessGrid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .trdProcessCard {
+        flex: 1 0 calc(50% - 10px);
+        min-height: auto;
+    }
+
+    .trdProcessTitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .trdHero {
+        height: 300px;
+    }
+
+    .trdIntroH1Wrap {
+        padding: 40px 5%;
+    }
+
+    .trdIntroTextWrap {
+        padding: 0 5% 40px;
+    }
+
+    .trdFeaturesSection {
+        padding: 48px 5%;
+    }
+
+    .trdFeatureCol {
+        padding-right: 16px;
+    }
+
+    .trdPromoSection {
+        height: 260px;
+    }
+
+    .trdProcessSection {
+        padding: 48px 5%;
+    }
+
+    .trdProcessGrid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .trdProcessCard {
+        flex: none;
+        padding: 32px;
+    }
+
+    .trdProcessTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
