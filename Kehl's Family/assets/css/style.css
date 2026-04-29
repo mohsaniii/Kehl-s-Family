@@ -1475,119 +1475,11 @@ ul {
 }
 
 /* ============================================================
-   SERVICE PAGE — RESPONSIVE
+   STORAGE PAGE — RESPONSIVE (MOVED TO CONSOLIDATED SECTION BELOW)
    ============================================================ */
-@media (max-width: 991px) {
-
-    .svcHero {
-        height: 420px;
-        margin-top: 60px;
-    }
-
-    .svcIntroSection {
-        padding: 48px 0;
-    }
-
-    .svcIntroTextWrap {
-        padding: 0 16px;
-        order: 2;
-    }
-
-    .svcIntroImageWrap {
-        margin-bottom: 32px;
-    }
-
-    .svcWhyImageWrap {
-        height: 320px;
-    }
-
-    .svcWhyContentWrap {
-        height: auto;
-        padding: 48px 6%;
-    }
-
-    .svcWhyGrid {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .svcSeasonSection {
-        padding: 48px 0;
-    }
-
-    .svcSeasonImageWrap {
-        margin-bottom: 32px;
-    }
-
-    .svcSeasonTextWrap {
-        padding: 0 16px;
-    }
-
-    .svcWarrantySection {
-        padding: 48px 0;
-    }
-
-    .svcWarrantyImageWrap {
-        margin-bottom: 32px;
-    }
-
-    .svcWarrantyTextWrap {
-        padding: 0 16px;
-    }
-
-    .svcStorageNavyCol {
-        height: auto;
-        padding: 60px 6%;
-    }
-
-    .svcStorageContent {
-        padding: 0;
-    }
-
-    .svcStorageImageWrap {
-        height: 320px;
-    }
-
-    .svcFormTopDivider {
-        margin-bottom: 48px;
-    }
-}
-
-@media (max-width: 575px) {
-
-    .svcHero {
-        height: 320px;
-    }
-
-    .svcIntroSection {
-        padding: 40px 0;
-    }
-
-    .svcSeasonSection {
-        padding: 40px 0;
-    }
-
-    .svcWarrantySection {
-        padding: 40px 0;
-    }
-
-    .svcWhyContentWrap {
-        padding: 40px 5%;
-    }
-
-    .svcStorageNavyCol {
-        padding: 48px 5%;
-    }
-
-    .svcFormSection {
-        padding: 60px 0 80px;
-    }
-}
 
 /* ============================================================
-   STORAGE PAGE CSS
-   Design: Figma node 2003:820
-   Colors: Navy #272262 | Aqua #00ADEF | Black #111
+   SELL/TRADE PAGE — RESPONSIVE (MOVED TO CONSOLIDATED SECTION BELOW)
    ============================================================ */
 
 /* --- Hero + Intro Combined Wrapper --- */
@@ -1741,43 +1633,6 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* ============================================================
-   STORAGE PAGE — RESPONSIVE
-   ============================================================ */
-@media (max-width: 991px) {
-
-    .storHeroIntroWrap {
-        margin-top: 60px;
-    }
-
-    .storHeroSubtitle {
-        font-size: 20px;
-    }
-
-    .storFramedImageCol {
-        height: auto;
-        align-items: flex-start;
-    }
-
-    .storDryStackContent {
-        padding: 48px 6%;
-    }
-
-    .storSlipContent {
-        padding: 48px 6%;
-    }
-
-    .storSlipImgWrap {
-        height: 360px;
-    }
-}
-
-@media (max-width: 575px) {
-    .storHeroSubtitle {
-        font-size: 18px;
-    }
 }
 
 /* ============================================================
@@ -1960,102 +1815,6 @@ ul {
     background-color: #fff;
     color: #272262;
 }
-
-/* ============================================================
-   SELL/TRADE PAGE — RESPONSIVE
-   ============================================================ */
-@media (max-width: 991px) {
-
-    .trdHero {
-        height: 420px;
-        margin-top: 60px;
-    }
-
-    .trdIntroH1Wrap {
-        padding: 48px 6%;
-    }
-
-    .trdIntroTextWrap {
-        padding: 0 6% 48px;
-    }
-
-    .trdFeaturesSection {
-        padding: 60px 5%;
-    }
-
-    .trdFeatureCol {
-        padding-right: 24px;
-    }
-
-    .trdPromoSection {
-        height: 360px;
-    }
-
-    .trdProcessSection {
-        padding: 60px 5%;
-    }
-
-    .trdProcessGrid {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .trdProcessCard {
-        flex: 1 0 calc(50% - 10px);
-        min-height: auto;
-    }
-
-    .trdProcessTitle {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 575px) {
-
-    .trdHero {
-        height: 300px;
-    }
-
-    .trdIntroH1Wrap {
-        padding: 40px 5%;
-    }
-
-    .trdIntroTextWrap {
-        padding: 0 5% 40px;
-    }
-
-    .trdFeaturesSection {
-        padding: 48px 5%;
-    }
-
-    .trdFeatureCol {
-        padding-right: 16px;
-    }
-
-    .trdPromoSection {
-        height: 260px;
-    }
-
-    .trdProcessSection {
-        padding: 48px 5%;
-    }
-
-    .trdProcessGrid {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .trdProcessCard {
-        flex: none;
-        padding: 32px;
-    }
-
-    .trdProcessTitle {
-        font-size: 28px;
-        line-height: 36px;
-    }
-}
-
 
 /* ============================================================
    CONTACT PAGE CSS — Design: Figma node 4008:2186
@@ -2267,60 +2026,6 @@ ul {
 .cntHoursTime {
     color: #555;
 }
-
-/* ---- Responsive ---- */
-@media (max-width: 991px) {
-    .cntHeroSpacer {
-        height: 400px;
-    }
-
-    .cntHeroBg {
-        height: 400px;
-    }
-
-    .cntFormCardWrap {
-        padding: 40px 5%;
-    }
-
-    .cntContactInfoWrap {
-        padding: 48px 5% 60px;
-    }
-
-    .cntLocationInfo {
-        padding: 60px 5%;
-    }
-}
-
-@media (max-width: 575px) {
-    .cntHeroSpacer {
-        height: 300px;
-    }
-
-    .cntHeroBg {
-        height: 300px;
-    }
-
-    .cntFormCard {
-        padding: 32px 24px;
-    }
-
-    .cntFormCardWrap {
-        padding: 32px 4%;
-    }
-
-    .cntContactInfoWrap {
-        padding: 40px 4% 48px;
-    }
-
-    .cntMapWrap {
-        height: 320px;
-    }
-
-    .cntLocationInfo {
-        padding: 48px 4%;
-    }
-}
-
 
 /* ============================================================
    ABOUT PAGE CSS — Design: Figma node 4002:138
@@ -3010,65 +2715,82 @@ ul {
         padding: 48px 3% 0 3%;
     }
 
-    .carIntroTextWrap {
-        padding: 48px 6% 60px;
-    }
-
-    .carPositionsSection {
-        padding: 60px 0;
-    }
-
-    .carJobCardBtns {
-        align-items: stretch;
-    }
-
-    .carJobDescBtn {
-        text-align: center;
-    }
-
-    .finIntroH1Wrap {
-        padding: 48px 6% 32px;
-        border-right: none;
-        border-bottom: 1px solid #F0F0F0;
-        justify-content: flex-start;
-    }
-
-    .finIntroTextWrap {
-        padding: 40px 6% 60px;
-    }
-
-    .finCalcRow {
-        min-height: auto;
-    }
-
-    .finCalcStatWrap {
-        padding: 60px 6% 32px;
-    }
-
-    .finCalcStatText {
-        font-size: 48px;
-    }
-
-    .finCalcCardWrap {
-        padding: 32px 6% 60px;
-        justify-content: center;
-    }
-
-    .finCalcCard {
-        max-width: 100%;
-    }
-
-    .finWhySection {
-        padding: 60px 0;
-    }
-    .abtIntroSection {
-        padding: 48px 0 60px;
-    }
-
-    .abtFullWidthImg {
+    /* Service Page */
+    .svcHero {
         height: 420px;
+        margin-top: 60px;
     }
-        .storHeroIntroWrap {
+
+    .svcIntroSection {
+        padding: 48px 0;
+    }
+
+    .svcIntroTextWrap {
+        padding: 0 16px;
+        order: 2;
+    }
+
+    .svcIntroImageWrap {
+        margin-bottom: 32px;
+    }
+
+    .svcWhyImageWrap {
+        height: 320px;
+    }
+
+    .svcWhyContentWrap {
+        height: auto;
+        padding: 48px 6%;
+    }
+
+    .svcWhyGrid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .svcSeasonSection {
+        padding: 48px 0;
+    }
+
+    .svcSeasonImageWrap {
+        margin-bottom: 32px;
+    }
+
+    .svcSeasonTextWrap {
+        padding: 0 16px;
+    }
+
+    .svcWarrantySection {
+        padding: 48px 0;
+    }
+
+    .svcWarrantyImageWrap {
+        margin-bottom: 32px;
+    }
+
+    .svcWarrantyTextWrap {
+        padding: 0 16px;
+    }
+
+    .svcStorageNavyCol {
+        height: auto;
+        padding: 60px 6%;
+    }
+
+    .svcStorageContent {
+        padding: 0;
+    }
+
+    .svcStorageImageWrap {
+        height: 320px;
+    }
+
+    .svcFormTopDivider {
+        margin-bottom: 48px;
+    }
+
+    /* Storage Page */
+    .storHeroIntroWrap {
         margin-top: 60px;
     }
 
@@ -3108,6 +2830,134 @@ ul {
 
     .storSlipImgWrap {
         height: 360px;
+    }
+
+    /* Sell/Trade Page */
+    .trdHero {
+        height: 420px;
+        margin-top: 60px;
+    }
+
+    .trdIntroH1Wrap {
+        padding: 48px 6%;
+    }
+
+    .trdIntroTextWrap {
+        padding: 0 6% 48px;
+    }
+
+    .trdFeaturesSection {
+        padding: 60px 5%;
+    }
+
+    .trdFeatureCol {
+        padding-right: 24px;
+    }
+
+    .trdPromoSection {
+        height: 360px;
+    }
+
+    .trdProcessSection {
+        padding: 60px 5%;
+    }
+
+    .trdProcessGrid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .trdProcessCard {
+        flex: 1 0 calc(50% - 10px);
+        min-height: auto;
+    }
+
+    .trdProcessTitle {
+        font-size: 32px;
+    }
+
+    /* Contact Page */
+    .cntHeroSpacer {
+        height: 400px;
+    }
+
+    .cntHeroBg {
+        height: 400px;
+    }
+
+    .cntFormCardWrap {
+        padding: 40px 5%;
+    }
+
+    .cntContactInfoWrap {
+        padding: 48px 5% 60px;
+    }
+
+    .cntLocationInfo {
+        padding: 60px 5%;
+    }
+
+    /* About Page */
+    .abtIntroSection {
+        padding: 48px 0 60px;
+    }
+
+    .abtFullWidthImg {
+        height: 420px;
+    }
+
+    /* Financing Page */
+    .finIntroH1Wrap {
+        padding: 48px 6% 32px;
+        border-right: none;
+        border-bottom: 1px solid #F0F0F0;
+        justify-content: flex-start;
+    }
+
+    .finIntroTextWrap {
+        padding: 40px 6% 60px;
+    }
+
+    .finCalcRow {
+        min-height: auto;
+    }
+
+    .finCalcStatWrap {
+        padding: 60px 6% 32px;
+    }
+
+    .finCalcStatText {
+        font-size: 48px;
+    }
+
+    .finCalcCardWrap {
+        padding: 32px 6% 60px;
+        justify-content: center;
+    }
+
+    .finCalcCard {
+        max-width: 100%;
+    }
+
+    .finWhySection {
+        padding: 60px 0;
+    }
+
+    /* Careers Page */
+    .carIntroTextWrap {
+        padding: 48px 6% 60px;
+    }
+
+    .carPositionsSection {
+        padding: 60px 0;
+    }
+
+    .carJobCardBtns {
+        align-items: stretch;
+    }
+
+    .carJobDescBtn {
+        text-align: center;
     }
 }
 
@@ -3153,40 +3003,160 @@ ul {
     .kehlServicesSection .kehlH2 {
         font-size: 18px;
     }
-     .carIntroTextWrap {
+
+    /* Service Page */
+    .svcHero {
+        height: 320px;
+    }
+
+    .svcIntroSection {
+        padding: 40px 0;
+    }
+
+    .svcSeasonSection {
+        padding: 40px 0;
+    }
+
+    .svcWarrantySection {
+        padding: 40px 0;
+    }
+
+    .svcWhyContentWrap {
+        padding: 40px 5%;
+    }
+
+    .svcStorageNavyCol {
+        padding: 48px 5%;
+    }
+
+    .svcFormSection {
+        padding: 60px 0 80px;
+    }
+
+    /* Storage Page */
+    .storHeroBg {
+        height: 300px;
+    }
+
+    .storHeroTextWrap {
+        padding: 80px 5% 40px;
+    }
+
+    .storHeroSubtitle {
+        font-size: 18px;
+    }
+
+    .storIntroTextWrap {
+        padding: 40px 5% 48px;
+    }
+
+    .storFramedImageCol {
+        padding: 32px 5%;
+    }
+
+    .storDryStackImgWrap {
+        height: 260px;
+    }
+
+    .storDryStackContent{
+        padding: 40px 5%;
+    }
+
+    .storSlipContent {
+        padding: 40px 5%;
+    }
+
+    .storSlipImgWrap {
+        height: 280px;
+    }
+
+    /* Sell/Trade Page */
+    .trdHero {
+        height: 300px;
+    }
+
+    .trdIntroH1Wrap {
+        padding: 40px 5%;
+    }
+
+    .trdIntroTextWrap {
+        padding: 0 5% 40px;
+    }
+
+    .trdFeaturesSection {
+        padding: 48px 5%;
+    }
+
+    .trdFeatureCol {
+        padding-right: 16px;
+    }
+
+    .trdPromoSection {
+        height: 260px;
+    }
+
+    .trdProcessSection {
+        padding: 48px 5%;
+    }
+
+    .trdProcessGrid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .trdProcessCard {
+        flex: none;
+        padding: 32px;
+    }
+
+    .trdProcessTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* Contact Page */
+    .cntHeroSpacer {
+        height: 300px;
+    }
+
+    .cntHeroBg {
+        height: 300px;
+    }
+
+    .cntFormCard {
+        padding: 32px 24px;
+    }
+
+    .cntFormCardWrap {
+        padding: 32px 4%;
+    }
+
+    .cntContactInfoWrap {
         padding: 40px 4% 48px;
     }
 
-    .carIntroSubtitle {
-        font-size: 20px;
+    .cntMapWrap {
+        height: 320px;
     }
 
-    .carIntroImageWrap {
-        min-height: 280px;
+    .cntLocationInfo {
+        padding: 48px 4%;
     }
 
-    .carPositionsSection {
-        padding: 48px 0;
+    /* About Page */
+    .abtIntroSection {
+        padding: 40px 0 48px;
     }
 
-    .carModal {
-        padding: 40px 24px 32px;
-        max-height: 92vh;
+    .abtFullWidthImg {
+        height: 260px;
     }
 
-    .carModalTitle {
-        font-size: 32px;
+    .abtIntroSubtitle {
+        font-size: 18px;
     }
 
-    .carUploadRow {
-        flex-direction: column;
-    }
-
-    .carFileLabel {
-        border-left: 1px solid #D9D9D9;
-        border-top: none;
-    }
-
+    /* Financing Page */
     .finIntroH1Wrap {
         padding: 40px 4% 24px;
     }
@@ -3219,51 +3189,38 @@ ul {
         padding: 32px 24px;
     }
 
-    .abtIntroSection {
-        padding: 40px 0 48px;
+    /* Careers Page */
+    .carIntroTextWrap {
+        padding: 40px 4% 48px;
     }
 
-    .abtFullWidthImg {
-        height: 260px;
+    .carIntroSubtitle {
+        font-size: 20px;
     }
 
-    .abtIntroSubtitle {
-        font-size: 18px;
+    .carIntroImageWrap {
+        min-height: 280px;
     }
 
-        .storHeroBg {
-        height: 300px;
+    .carPositionsSection {
+        padding: 48px 0;
     }
 
-    .storHeroTextWrap {
-        padding: 80px 5% 40px;
+    .carModal {
+        padding: 40px 24px 32px;
+        max-height: 92vh;
     }
 
-    .storHeroSubtitle {
-        font-size: 18px;
+    .carModalTitle {
+        font-size: 32px;
     }
 
-    .storIntroTextWrap {
-        padding: 40px 5% 48px;
+    .carUploadRow {
+        flex-direction: column;
     }
 
-    .storFramedImageCol {
-        padding: 32px 5%;
-    }
-
-    .storDryStackImgWrap {
-        height: 260px;
-    }
-
-    .storDryStackContent {
-        padding: 40px 5%;
-    }
-
-    .storSlipContent {
-        padding: 40px 5%;
-    }
-
-    .storSlipImgWrap {
-        height: 280px;
+    .carFileLabel {
+        border-left: 1px solid #D9D9D9;
+        border-top: none;
     }
 }
