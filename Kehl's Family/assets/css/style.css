@@ -1308,7 +1308,6 @@ ul {
 /* --- Warranty Section --- */
 .svcWarrantySection {
     background-color: #fff;
-    border-top: 1px solid #F0F0F0;
     padding: 80px 0;
 }
 
@@ -1398,7 +1397,7 @@ ul {
 /* --- Request Service Form --- */
 .svcFormSection {
     background-color: #fff;
-    padding: 80px 0 100px;
+    margin: 80px 0;
 }
 
 .svcFormTopDivider {
@@ -3053,7 +3052,7 @@ ul {
     }
 
     .svcFormSection {
-        padding: 60px 0 80px;
+        margin: 40px 0;
     }
 
     /* Storage Page */
