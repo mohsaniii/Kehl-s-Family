@@ -33,6 +33,10 @@ a:hover {
     text-decoration: none;
 }
 
+body{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Tw Cen MT";
     src: url("../fonts/tw-cen-mt/Tw-Cen-MT.ttf") format("truetype");
