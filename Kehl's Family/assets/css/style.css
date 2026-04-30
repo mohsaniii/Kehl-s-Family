@@ -33,7 +33,7 @@ a:hover {
     text-decoration: none;
 }
 
-body{
+body {
     scroll-behavior: smooth;
 }
 
@@ -934,7 +934,7 @@ ul {
     object-fit: cover;
 }
 
-.kehlAboutOuterWrap{
+.kehlAboutOuterWrap {
     display: flex;
     align-items: center;
     height: 100%;
@@ -1029,7 +1029,7 @@ ul {
 
 /* Links (light) column */
 .kehlFooterLinks {
-        padding: 64px 12% 0 12%;
+    padding: 64px 12% 0 12%;
     height: 100%;
 }
 
@@ -1104,7 +1104,7 @@ ul {
     margin: 0;
 }
 
-.kehlFooterBottom a{
+.kehlFooterBottom a {
     color: #111;
     text-align: right;
     font-family: "Tw Cen MT";
@@ -1114,7 +1114,7 @@ ul {
     line-height: 24px;
 }
 
-.kehlFooterBottom a:hover{
+.kehlFooterBottom a:hover {
     color: #111;
 }
 
@@ -1180,7 +1180,7 @@ ul {
     padding: 0 24px;
 }
 
-.svcIntroTextWrap > div {
+.svcIntroTextWrap>div {
     max-width: 560px;
     margin: 0 auto;
 }
@@ -1286,7 +1286,7 @@ ul {
     padding: 0 24px;
 }
 
-.svcSeasonTextWrap > div {
+.svcSeasonTextWrap>div {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -1335,7 +1335,7 @@ ul {
     padding: 0 24px;
 }
 
-.svcWarrantyTextWrap > div {
+.svcWarrantyTextWrap>div {
     max-width: 560px;
     margin: 0 auto;
 }
@@ -1392,6 +1392,20 @@ ul {
 .svcStorageBtn:hover {
     background-color: #fff;
     color: #272262;
+}
+
+.storHeroTextWrapHeader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.storHeroTextWrap {
+    max-width: 700px;
 }
 
 /* --- Request Service Form --- */
@@ -1494,8 +1508,8 @@ ul {
 .storHeroBg {
     position: relative;
     width: 100%;
-    height: 600px;
-    z-index: 3;
+    height: 500px;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -1516,11 +1530,16 @@ ul {
 
 .storHeroTextWrap {
     position: absolute;
-    left: 7.5%;
-    bottom: 64px;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
     z-index: 2;
-    padding: 0 15px;
-    max-width: 720px;
+    max-width: 700px;
+}
+
+.storHeroTextWrap .kehlH1 {
+    color: #fff;
+    margin-bottom: 0;
 }
 
 .storHeroSubtitle {
@@ -1529,30 +1548,32 @@ ul {
     font-weight: 400;
     line-height: 1.4;
     color: #fff;
+    margin-top: 16px;
+}
+
+.storageIntroSection {
+    position: relative;
+    margin-top: -120px;
+    z-index: 2;
 }
 
 .storIntroTextWrap {
     position: relative;
     z-index: 2;
     background-color: #fff;
-    padding-top: 64px;
+    margin-top: 160px;
     max-width: 700px;
 }
 
 /* --- Framed Image (right column, spans hero + intro) --- */
 .storFramedImageCol {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 3;
-    display: flex;
-    align-items: center;
     max-width: 700px;
     margin: -26% auto 0 auto;
 }
 
 .storFramedImageWrap {
     width: 100%;
+    max-width: 700px;
 }
 
 .storFramedImageWrap img {
@@ -1560,11 +1581,13 @@ ul {
     height: auto;
     display: block;
     border: 10px solid #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Outdoor Dry Stack Storage Section --- */
 .storDryStackSection {
     background-color: #fff;
+    margin-top: 80px;
 }
 
 .storDryStackImgWrap {
@@ -1584,6 +1607,7 @@ ul {
 .storDryStackContent {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* --- Price / Pricing Text (shared across storage sections) --- */
@@ -1606,6 +1630,7 @@ ul {
 .storSlipContent {
     max-width: 560px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .storBulletList {
@@ -2620,15 +2645,49 @@ ul {
 }
 
 
+@media (max-width: 1700px) {
+    .storFramedImageCol {
+        margin: -12% auto 0 auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    .storFramedImageCol {
+        margin: -6% auto 0 auto;
+    }
+}
+
 /* ============================================================
    RESPONSIVE — TABLET & MOBILE
    ============================================================ */
 @media (max-width: 991px) {
-    .kehlBoatTypesSection{
+    .kehlBoatTypesSection {
         margin-top: 40px;
     }
 
-    .kehlAboutSection{
+    .storDryStackSection{
+        margin-top: 64px;
+    }
+
+    .storSlipSection{
+        margin: 64px 0;
+    }
+
+    .storageIntroSection{
+        margin-top: 0;
+    }
+
+    .storFramedImageCol{
+        margin-top: 0;
+    }
+
+    .storIntroTextWrap{
+        padding: 20px 15px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+
+    .kehlAboutSection {
         margin-bottom: 60px;
     }
 
@@ -2636,7 +2695,7 @@ ul {
         margin: 64px 0;
     }
 
-    .kehlArrivalsSection{
+    .kehlArrivalsSection {
         margin: 40px;
     }
 
@@ -2813,37 +2872,34 @@ ul {
     }
 
     .storHeroBg {
-        height: 380px;
+        height: 400px;
     }
 
     .storHeroTextWrap {
-        padding: 120px 6% 48px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: unset;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .storHeroTextWrap .kehlH1 {
+        font-size: 36px;
+        line-height: 44px;
     }
 
     .storHeroSubtitle {
         font-size: 20px;
+        margin-top: 12px;
     }
 
-    .storIntroTextWrap {
-        padding: 48px 6% 60px;
-    }
-
-    .storFramedImageCol {
-        height: auto;
-        padding: 40px 6%;
-        align-items: flex-start;
+    .storageIntroSection {
+        margin-top: -100px;
     }
 
     .storDryStackImgWrap {
         height: 320px;
-    }
-
-    .storDryStackContent {
-        padding: 48px 6%;
-    }
-
-    .storSlipContent {
-        padding: 48px 6%;
     }
 
     .storSlipImgWrap {
@@ -2997,6 +3053,10 @@ ul {
         letter-spacing: 2px;
     }
 
+    .kehlFooterLogo{
+        max-width: 250px;
+    }
+
     .kehlH2 {
         font-size: 22px;
         line-height: 28px;
@@ -3057,35 +3117,25 @@ ul {
 
     /* Storage Page */
     .storHeroBg {
-        height: 300px;
+        height: 320px;
     }
 
-    .storHeroTextWrap {
-        padding: 80px 5% 40px;
+    .storHeroTextWrap .kehlH1 {
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .storHeroSubtitle {
         font-size: 18px;
+        margin-top: 10px;
     }
 
-    .storIntroTextWrap {
-        padding: 40px 5% 48px;
-    }
-
-    .storFramedImageCol {
-        padding: 32px 5%;
+    .storageIntroSection {
+        margin-top: -80px;
     }
 
     .storDryStackImgWrap {
         height: 260px;
-    }
-
-    .storDryStackContent{
-        padding: 40px 5%;
-    }
-
-    .storSlipContent {
-        padding: 40px 5%;
     }
 
     .storSlipImgWrap {
