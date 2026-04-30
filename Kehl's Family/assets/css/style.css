@@ -2089,7 +2089,7 @@ ul {
 
 
 .abtIntroInner {
-    max-width: 960px;
+    max-width: 1050px;
     margin: 0 auto;
     text-align: center;
     padding: 0 15px;
@@ -2326,14 +2326,13 @@ ul {
 /* ---- Intro Section ---- */
 .carIntroSection {
     background-color: #fff;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .carIntroTextWrap {
-    padding: 60px 8% 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
     height: 100%;
 }
 
@@ -2360,8 +2359,7 @@ ul {
 /* ---- Available Positions Section ---- */
 .carPositionsSection {
     background-color: #fff;
-    padding: 80px 0;
-    border-top: 1px solid #F0F0F0;
+    margin: 80px 0;
     scroll-margin-top: 96px;
 }
 
@@ -3033,12 +3031,9 @@ ul {
     }
 
     /* Careers Page */
-    .carIntroTextWrap {
-        padding: 48px 6% 60px;
-    }
 
     .carPositionsSection {
-        padding: 60px 0;
+        margin: 64px 0;
     }
 
     .carJobCardBtns {
@@ -3274,9 +3269,6 @@ ul {
     }
 
     /* Careers Page */
-    .carIntroTextWrap {
-        padding: 40px 4% 48px;
-    }
 
     .carIntroSubtitle {
         font-size: 20px;
@@ -3284,10 +3276,6 @@ ul {
 
     .carIntroImageWrap {
         min-height: 280px;
-    }
-
-    .carPositionsSection {
-        padding: 48px 0;
     }
 
     .carModal {
