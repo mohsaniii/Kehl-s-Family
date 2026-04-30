@@ -439,7 +439,7 @@ ul {
     height: 100vh;
     background-color: #fff;
     z-index: 300;
-    padding: 36px 32px;
+    padding: 32px 15px;
     overflow-y: auto;
     box-shadow: 8px 0 24px rgba(0, 0, 0, 0.15);
     transform: translateX(-110%);
@@ -458,7 +458,7 @@ ul {
 }
 
 .kehlMobileSideMenuClose img {
-    width: 16px;
+    max-width: 40px;
 }
 
 /* ============================================================
@@ -549,7 +549,7 @@ ul {
    NEW ARRIVALS SECTION
    ============================================================ */
 .kehlArrivalsSection {
-    padding: 80px 0 100px;
+    margin: 80px 0;
     background-color: #fff;
 }
 
@@ -848,7 +848,7 @@ ul {
    VIDEOS SECTION
    ============================================================ */
 .kehlVideosSection {
-    padding: 80px 0 100px;
+    margin: 120px 0;
     background-color: #fff;
 }
 
@@ -2625,6 +2625,21 @@ ul {
    RESPONSIVE — TABLET & MOBILE
    ============================================================ */
 @media (max-width: 991px) {
+    .kehlBoatTypesSection{
+        margin-top: 40px;
+    }
+
+    .kehlAboutSection{
+        margin-bottom: 60px;
+    }
+
+    .kehlVideosSection {
+        margin: 64px 0;
+    }
+
+    .kehlArrivalsSection{
+        margin: 40px;
+    }
 
     .kehlPromoSection .owl-dot span {
         width: 20px !important;
@@ -2707,7 +2722,7 @@ ul {
 
     /* About */
     .kehlAboutTextWrap {
-        padding: 40px 6%;
+        padding: 20px 15px;
     }
 
     /* Footer */
@@ -2968,6 +2983,10 @@ ul {
 @media (max-width: 767px) {
     .kehlPromoSection .owl-dot span {
         width: 5px !important;
+    }
+
+    .kehlVideosSection {
+        margin: 40px 0;
     }
 }
 
