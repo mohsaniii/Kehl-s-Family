@@ -1505,6 +1505,21 @@ ul {
     margin-top: 80px;
 }
 
+.trdPromoSection{
+    position: relative;
+    padding-top: 27%;
+    min-height: 200px;
+}
+
+.trdPromoSection img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .storHeroBg {
     position: relative;
     width: 100%;
@@ -1748,10 +1763,6 @@ ul {
 }
 
 /* --- Promo / Full-Width Image Section --- */
-.trdPromoSection {
-    height: 520px;
-    overflow: hidden;
-}
 
 .trdPromoImg {
     width: 100%;
@@ -2957,14 +2968,6 @@ ul {
     }
 
     /* Sell/Trade Page */
-    .trdHero {
-        height: 420px;
-        margin-top: 60px;
-    }
-
-    .trdIntroH1Wrap {
-        padding: 48px 6%;
-    }
 
     .trdIntroTextWrap {
         padding: 0 6% 48px;
@@ -2976,10 +2979,6 @@ ul {
 
     .trdFeatureCol {
         padding-right: 24px;
-    }
-
-    .trdPromoSection {
-        height: 360px;
     }
 
     .trdProcessSection {
@@ -3168,9 +3167,6 @@ ul {
     }
 
     /* Sell/Trade Page */
-    .trdHero {
-        height: 300px;
-    }
 
     .trdIntroH1Wrap {
         padding: 40px 5%;
@@ -3186,10 +3182,6 @@ ul {
 
     .trdFeatureCol {
         padding-right: 16px;
-    }
-
-    .trdPromoSection {
-        height: 260px;
     }
 
     .trdProcessSection {
