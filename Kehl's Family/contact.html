@@ -108,76 +108,99 @@
 
     <!-- ==================== HERO + CONTACT INFO COMBINED WRAPPER ==================== -->
     <div class="cntTopWrap">
-
         <!-- Hero background photo (absolute, sits behind content) -->
         <div class="cntHeroBg">
             <img src="./assets/images/contact/Rectangle 493.png" alt="Contact Hero" class="cntHeroBgImg">
             <div class="cntHeroOverlay"></div>
         </div>
+    </div>
 
-        <div class="container-fluid px-0">
-            <div class="row no-gutters">
+    <section>
+        <div class="contactHeroAndFormSection">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-11 col-xl-10 mx-auto">
+                        <div class="row align-items-center">
 
-                <!-- Left: hero spacer → contact info on white -->
-                <div class="col-lg-6">
-                    <div class="cntHeroSpacer"></div>
-                    <div class="cntContactInfoWrap">
-                        <h1 class="kehlH1 kehlNavyText">Contact Kehl's</h1>
-                        <p class="kehlPara kehlBlackText mt-4">We'd love to hear from you. Whether you have a question about our inventory, services, or anything else — our team is ready to answer all your questions.</p>
-                    </div>
-                </div>
+                            <!-- Left: hero spacer → contact info on white -->
+                            <div class="col-lg-6">
+                                <div class="cntContactInfoWrap">
+                                    <h1 class="kehlH1 kehlNavyText">Contact Kehl's</h1>
+                                    <p class="kehlPara kehlBlackText mt-4">Have questions or ready to get started? The
+                                        team at Kehl’s Family Boating Center is here to help with boat sales, service,
+                                        parts, financing, and everything you need for life on the water. Reach out by
+                                        phone, email, or stop by in person. Our friendly and knowledgeable staff looks
+                                        forward to assisting you.</p>
+                                </div>
+                            </div>
 
-                <!-- Right: form card overlapping hero -->
-                <div class="col-lg-6">
-                    <div class="cntFormCardWrap">
-                        <div class="cntFormCard">
-                            <h2 class="cntFormHeading">Drop Us a Line</h2>
-                            <form class="cntContactForm mt-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="cntFormField">
-                                            <input type="text" class="cntInput" placeholder="First Name">
+                            <!-- Right: form card overlapping hero -->
+                            <div class="col-lg-6">
+                                <div class="cntFormCardWrap">
+                                    <div class="cntFormCard">
+                                        <h2 class="cntFormHeading text-center">Drop Us a Line</h2>
+                                        <div class="cntContactForm mt-4">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="cntFormField">
+                                                            <input type="text" class="cntInput"
+                                                                placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="cntFormField">
+                                                            <input type="text" class="cntInput" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="cntFormField">
+                                                            <input type="email" class="cntInput" placeholder="Email">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="cntFormField">
+                                                            <input type="tel" class="cntInput" placeholder="Phone">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="cntFormField">
+                                                            <textarea class="cntInput cntTextarea" placeholder="Message"
+                                                                rows="5"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <button type="submit" class="cntSubmitBtn">Submit</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="cntFormField">
-                                            <input type="text" class="cntInput" placeholder="Last Name">
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="cntFormField">
-                                    <input type="email" class="cntInput" placeholder="Email">
-                                </div>
-                                <div class="cntFormField">
-                                    <input type="tel" class="cntInput" placeholder="Phone">
-                                </div>
-                                <div class="cntFormField">
-                                    <textarea class="cntInput cntTextarea" placeholder="Message" rows="5"></textarea>
-                                </div>
-                                <button type="submit" class="cntSubmitBtn">Submit</button>
-                            </form>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ==================== MAP + LOCATION INFO SECTION ==================== -->
     <section class="cntMapSection">
         <div class="container-fluid px-0">
-            <div class="row no-gutters">
+            <div class="row no-gutters align-items-center">
 
                 <!-- Left: Google Maps iframe -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="cntMapWrap">
-                        <iframe
-                            class="cntMapIframe"
+                        <iframe class="cntMapIframe"
                             src="https://maps.google.com/maps?q=541+W+Montauk+Hwy,+Lindenhurst,+NY+11757&output=embed"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                             title="Kehl's Family Boating Center Location">
                         </iframe>
                     </div>
@@ -188,26 +211,14 @@
                     <div class="cntLocationInfo">
                         <h2 class="kehlH2 kehlNavyText">Kehl's Family Boating Center</h2>
                         <address class="cntAddress mt-4">
-                            <span class="cntAddressLine">541 W Montauk Hwy.</span><br>
-                            <span class="cntAddressLine">Lindenhurst, NY 11757</span>
+                            <p class="cntAddressLine">541 W Montauk Hwy. Lindenhurst, NY 11757</p>
                         </address>
-                        <a href="tel:+16312264747" class="cntLocationPhone mt-3 d-block">(631) 226-4747</a>
-                        <div class="cntHoursBlock mt-5">
-                            <h3 class="kehlH3 kehlNavyText">Hours of Operation</h3>
-                            <ul class="cntHoursList mt-3">
-                                <li class="cntHoursRow">
-                                    <span class="cntHoursDay">Monday – Friday</span>
-                                    <span class="cntHoursTime">8:00 AM – 5:00 PM</span>
-                                </li>
-                                <li class="cntHoursRow">
-                                    <span class="cntHoursDay">Saturday</span>
-                                    <span class="cntHoursTime">9:00 AM – 3:00 PM</span>
-                                </li>
-                                <li class="cntHoursRow">
-                                    <span class="cntHoursDay">Sunday</span>
-                                    <span class="cntHoursTime">Closed</span>
-                                </li>
-                            </ul>
+                        <a href="tel:+12318434770" class="cntLocationPhone mt-3 d-block">(231) 843-4770</a>
+                        <div class="cntHoursBlock mt-4">
+                            <h3 class="smallHeading">Hours</h3>
+                            <p class="kehlBlackText">Mon - Fri: 9:00 a.m. - 5:00 p.m.</p>
+                            <p class="kehlBlackText">Sat: 10:00 a.m. - 4:00 p.m.</p>
+                            <p class="kehlBlackText">Sun: Closed</p>
                         </div>
                     </div>
                 </div>
@@ -225,7 +236,8 @@
                     <div class="kehlFooterNewsletter">
                         <div class="kehlFooterNewsletterInner">
                             <h2 class="kehlH2 text-white text-center">Enter our<br>World</h2>
-                            <p class="kehlPara text-white text-center mt-3">Our Newsletter informs of promotions, events, Kehl's Family Boating Center news, and more.</p>
+                            <p class="kehlPara text-white text-center mt-3">Our Newsletter informs of promotions,
+                                events, Kehl's Family Boating Center news, and more.</p>
                             <div class="kehlNewsletterForm mt-4">
                                 <div class="kehlEmailWrap">
                                     <input type="email" placeholder="Enter your email address" class="kehlEmailInput">
@@ -322,4 +334,5 @@
     <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>
